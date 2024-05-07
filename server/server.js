@@ -19,16 +19,17 @@ app.get("/", (request, response) => {
 
 // select the animals for the Home Page
 app.get("/animals", async (request, response) => {
-  const result = await db.query(`SELECT
-  animals.id,
-  animals.name,
-  animals.age,
-  animals.colour,
-  animals.breed,
-  animals.date_added,
-  animals.type
-   from animals`);
-  response.json(result.rows);
+  //   const result = await db.query(`SELECT
+  // animals.id,
+  // animals.name,
+  // animals.age,
+  // animals.colour,
+  // animals.breed,
+  // animals.date_added,
+  // animals.type
+  //  from animals`);
+  //   response.json(result.rows);
+  response.json("root rot route on animals");
 });
 
 // app.post("/animal", async (request, response) => {

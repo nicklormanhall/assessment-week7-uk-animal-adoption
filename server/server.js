@@ -29,8 +29,7 @@ app.get("/animals", async (request, response) => {
   animals.type
    from animals
    ORDER BY
-    date_added DESC;
-  `);
+    date_added DESC`);
   response.json(result.rows);
 });
 

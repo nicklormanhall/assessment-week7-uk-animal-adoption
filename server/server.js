@@ -27,9 +27,7 @@ app.get("/animals", async (request, response) => {
   animals.breed,
   animals.date_added,
   animals.type
-   from animals
-   ORDER BY
-    date_added DESC`);
+   from animals`);
   response.json(result.rows);
 });
 
